@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- EDITAR: descripción específica de esta página -->
+  <meta name="description" content="Nom Nom | Chatbot">
+  <title>Nom Nom | Chatbot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+
+  <!-- EDITAR: mensaje promocional global -->
+  <div class="announcement">
+    <p>Amor y Amistad · Pregunta por nuestras promociones</p>
+    <a href="productos.html">Ver productos →</a>
+  </div>
+
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navegación principal">
+      <!-- EDITAR: logo y nombre del emprendimiento -->
+      <a class="brand" href="index.html" aria-label="Ir al inicio">
+        <img src="https://lh3.googleusercontent.com/d/1QMMsMa7xFpCioEOwvbarevhTAPmQsnxx" alt="Logo de Nom Nom" class="brand-mark-img">
+        <span class="brand-copy">
+          <strong>Nom Nom</strong>
+          <small>El antojo perfecto</small>
+        </span>
+      </a>
+
+
+      <button class="icon-button menu-toggle" id="menuToggle" type="button"
+              aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+
+      <ul class="nav-menu" id="navMenu"><li><a class="nav-link " href="index.html">Inicio</a></li>
+<li><a class="nav-link " href="nosotros.html">Nosotros</a></li>
+<li><a class="nav-link " href="productos.html">Productos</a></li>
+<li><a class="nav-link " href="opiniones.html">Opiniones</a></li>
+<li><a class="nav-link active" href="chatbot.html">Chatbot</a></li>
+<li><a class="nav-link " href="contacto.html">Contacto</a></li></ul>
+
+
+      <div class="nav-actions">
+        <button class="icon-button" id="themeToggle" type="button" aria-label="Cambiar tema">
+          <span id="themeIcon">☾</span>
+        </button>
+        <button class="cart-button" id="openCart" type="button" aria-label="Abrir carrito">
+          <span>🛒</span><span class="cart-label">Carrito</span><span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+
+  <main id="contenido">
+
+
+<section class="page-hero compact">
+  <div class="container page-hero-content reveal">
+    <span class="eyebrow">04 · Asistente</span>
+    <h1>¿Tienes alguna pregunta?<br><span>Pregúntale al chatbot.</span></h1>
+    <p>Nuestro asistente está aquí para responder tus preguntas.</p>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container chatbot-layout">
+    <div class="chat-intro reveal">
+      <span class="eyebrow">Asistente Ñom</span>
+      <h2>Estoy aquí para ayudarte.</h2>
+      <p>Puedo orientarte sobre productos, precios, horarios de atención y formas de contacto.</p>
+      <div class="suggestion-list">
+        <button type="button" class="suggestion" data-question="¿Qué productos tienen?">¿Qué productos tienen?</button>
+        <button type="button" class="suggestion" data-question="¿Cómo puedo comprar?">¿Cómo puedo comprar?</button>
+        <button type="button" class="suggestion" data-question="¿Cómo los contacto?">¿Cómo los contacto?</button>
+      </div>
+    </div>
+
+
+    <!-- No requiere servidor: las respuestas se programan en scripts.js -->
+    <div class="chat-window reveal">
+      <div class="chat-header"><span class="status-dot"></span><div><strong>Ñom Assistant</strong><small>En línea</small></div></div>
+      <div class="chat-messages" id="chatMessages">
+        <div class="message bot">¡Hola! Soy el asistente de Nom Nom. ¿Qué puedo hacer por ti?</div>
+      </div>
+      <form class="chat-form" id="chatForm">
+        <input id="chatInput" type="text" placeholder="Escribe tu pregunta..." autocomplete="off">
+        <button class="button button-primary button-small" type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><strong>Nom Nom</strong><p>Descubre, Prueba, Disfruta.</p></div>
+      <div class="footer-links">
+        <a href="nosotros.html">Nosotros</a>
+        <a href="productos.html">Productos</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <small>© <span class="current-year"></span> Nom Nom · Proyecto de emprendimiento</small>
+    </div>
+  </footer>
+</body>
+</html>
+

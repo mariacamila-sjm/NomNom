@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- EDITAR: descripción específica de esta página -->
+  <meta name="description" content="Nom Nom | Productos">
+  <title>Nom Nom | Productos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+
+  <!-- EDITAR: mensaje promocional global -->
+  <div class="announcement">
+    <p>Amor y Amistad · Pregunta por nuestras promociones</p>
+    <a href="productos.html">Ver productos →</a>
+  </div>
+
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navegación principal">
+      <!-- EDITAR: logo y nombre del emprendimiento -->
+      <a class="brand" href="index.html" aria-label="Ir al inicio">
+        <img src="https://lh3.googleusercontent.com/d/1QMMsMa7xFpCioEOwvbarevhTAPmQsnxx" alt="Logo de Nom Nom" class="brand-mark-img">
+        <span class="brand-copy">
+          <strong>Nom Nom</strong>
+          <small>Descubre, Prueba, Disfruta del antojo perfecto</small>
+        </span>
+      </a>
+
+
+      <button class="icon-button menu-toggle" id="menuToggle" type="button"
+              aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+
+      <ul class="nav-menu" id="navMenu"><li><a class="nav-link " href="index.html">Inicio</a></li>
+<li><a class="nav-link " href="nosotros.html">Nosotros</a></li>
+<li><a class="nav-link active" href="productos.html">Productos</a></li>
+<li><a class="nav-link " href="opiniones.html">Opiniones</a></li>
+<li><a class="nav-link " href="chatbot.html">Chatbot</a></li>
+<li><a class="nav-link " href="contacto.html">Contacto</a></li></ul>
+
+
+      <div class="nav-actions">
+        <button class="icon-button" id="themeToggle" type="button" aria-label="Cambiar tema">
+          <span id="themeIcon">☾</span>
+        </button>
+        <button class="cart-button" id="openCart" type="button" aria-label="Abrir carrito">
+          <span>🛒</span><span class="cart-label">Carrito</span><span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+
+  <main id="contenido">
+
+
+<section class="page-hero compact">
+  <div class="container page-hero-content reveal">
+    <span class="eyebrow">02 · Catálogo</span>
+    <h1>Sabor para cada <span>ocasión.</span></h1>
+    <p>Explora nuestros mejores dulces y agrega al carrito los que más te interesen.</p>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container">
+    <!-- EDITAR: puedes cambiar categorías y productos directamente en este HTML -->
+    <div class="catalog-toolbar">
+      <div>
+        <span class="eyebrow">Catálogo actual</span>
+        <h2>Elige tu próximo favorito.</h2>
+      </div>
+      <select id="productFilter" aria-label="Filtrar productos">
+        <option value="all">Todos</option>
+        <option value="Unidades">Unidades</option>
+        <option value="Pack x3">Pack x3</option>
+        <option value="Pack x6">Pack x6</option>
+        <option value="De temporada">De temporada</option>
+      </select>
+    </div>
+
+
+    <div class="product-grid" id="productGrid">
+      <!-- EDITAR: cada tarjeta representa un producto. data-category debe coincidir con el filtro -->
+      <article class="product-card reveal" data-category="Unidades">
+        <div class="product-image">
+          <img src="https://lh3.googleusercontent.com/d/1m7fElPIfDZX1Ot6tbiy9G2lKWfWn7hw9" alt="Unidades">
+          <span class="product-tag">Destacado</span>
+        </div>
+        <div class="product-info">
+          <small>Unidad</small>
+          <h3>Cake Pop</h3>
+          <!-- EDITAR: descripción, precio y datos del producto -->
+          <p>Pequeño, delicioso y perfecto para darte un gustico🍬.</p>
+          <div class="product-bottom">
+            <strong>$3.000</strong>
+            <button class="button button-small add-to-cart" type="button" data-name="Unidad" data-price="3000">Agregar</button>
+          </div>
+        </div>
+      </article>
+
+
+      <article class="product-card reveal" data-category="Pack x3">
+        <div class="product-image">
+          <img src="https://lh3.googleusercontent.com/d/19Tc_4Wbc9atHF5Z-sq0nT3V9_v0XD5_f" alt="Pack x3">
+          <span class="product-tag">Nuevo</span>
+        </div>
+        <div class="product-info">
+          <small>Pack x3</small>
+          <h3>Cake pops x3</h3>
+          <p>res unidades para disfrutar, compartir o simplemente repetir. 🍫.</p>
+          <div class="product-bottom">
+            <strong>$8.000</strong>
+            <button class="button button-small add-to-cart" type="button" data-name="Tech Pack" data-price="34900">Agregar</button>
+          </div>
+        </div>
+      </article>
+
+
+      <article class="product-card reveal" data-category="Pack x6">
+        <div class="product-image">
+          <img src="https://lh3.googleusercontent.com/d/12mQIQt-VSgNoC_kHB2PtFF60IIYXTG8C" alt="Solución tecnológica para el hogar">
+        </div>
+        <div class="product-info">
+          <small>Pack x6</small>
+          <h3>Cake pops x6</h3>
+          <p>Seis cake pops para compartir, celebrar o disfrutar mucho más. 🍭</p>
+          <div class="product-bottom">
+            <strong>$16.000</strong>
+            <button class="button button-small add-to-cart" type="button" data-name="Pack x6" data-price="69900">Agregar</button>
+          </div>
+        </div>
+      </article>
+
+
+      <article class="product-card reveal" data-category="De temporada">
+        <div class="product-image">
+          <img src="https://lh3.googleusercontent.com/d/1PpOMzAqQ6AhjYZuk0wwgeh2e5TAXmSkV" alt="De temporada">
+        </div>
+        <div class="product-info">
+          <small>De temporada</small>
+          <h3>Especiales</h3>
+          <p>Diseños especiales disponibles por tiempo limitado🩷.</p>
+          <div class="product-bottom">
+            <strong>$4.000 - $20.000</strong>
+            <button class="button button-small add-to-cart" type="button" data-name="Home Control" data-price="69900">Agregar</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- EDITAR: información de compra real del emprendimiento -->
+<section class="section section-soft">
+  <div class="container mini-info-grid">
+    <div><strong>01</strong><h3>Elige</h3><p>Explora nuestros mejores dulces y agrega al carrito los que más te interesen.</p></div>
+    <div><strong>02</strong><h3>Consulta</h3><p>Revisa disponibilidad y detalles con nuestro equipo.</p></div>
+    <div><strong>03</strong><h3>Recibe</h3><p>Coordinamos la entrega según las condiciones del emprendimiento.</p></div>
+  </div>
+</section>
+
+
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><strong>Nom Nom</strong><p>El antojo perfecto.</p></div>
+      <div class="footer-links">
+        <a href="nosotros.html">Nosotros</a>
+        <a href="productos.html">Productos</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <small>© <span class="current-year"></span> Nom Nom · Proyecto de emprendimiento</small>
+    </div>
+  </footer>
+</body>
+</html>
+

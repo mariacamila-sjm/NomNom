@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- EDITAR: descripción específica de esta página -->
+  <meta name="description" content="Nom Nom | Contacto">
+  <title>Nom Nom | Contacto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+
+  <!-- EDITAR: mensaje promocional global -->
+  <div class="announcement">
+    <p>Amor y Amistad · Pregunta por nuestras promociones</p>
+    <a href="productos.html">Ver productos →</a>
+  </div>
+
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navegación principal">
+      <!-- EDITAR: logo y nombre del emprendimiento -->
+      <a class="brand" href="index.html" aria-label="Ir al inicio">
+        <img src="https://lh3.googleusercontent.com/d/1QMMsMa7xFpCioEOwvbarevhTAPmQsnxx" alt="Logo de Nom Nom" class="brand-mark-img">
+        <span class="brand-copy">
+          <strong>Nom Nom</strong>
+          <small>El antojo perfecto</small>
+        </span>
+      </a>
+
+
+      <button class="icon-button menu-toggle" id="menuToggle" type="button"
+              aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+
+      <ul class="nav-menu" id="navMenu"><li><a class="nav-link " href="index.html">Inicio</a></li>
+<li><a class="nav-link " href="nosotros.html">Nosotros</a></li>
+<li><a class="nav-link " href="productos.html">Productos</a></li>
+<li><a class="nav-link " href="opiniones.html">Opiniones</a></li>
+<li><a class="nav-link " href="chatbot.html">Chatbot</a></li>
+<li><a class="nav-link active" href="contacto.html">Contacto</a></li></ul>
+
+
+      <div class="nav-actions">
+        <button class="icon-button" id="themeToggle" type="button" aria-label="Cambiar tema">
+          <span id="themeIcon">☾</span>
+        </button>
+        <button class="cart-button" id="openCart" type="button" aria-label="Abrir carrito">
+          <span>🛒</span><span class="cart-label">Carrito</span><span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+
+  <main id="contenido">
+
+
+<section class="page-hero compact">
+  <div class="container page-hero-content reveal">
+    <span class="eyebrow">05 · Contacto</span>
+    <h1>¿Qué se te <span>antoja hoy?.</span></h1>
+    <p>Escríbenos y descubre todo lo que tenemos para ti.</p>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container contact-layout">
+    <div class="contact-info reveal">
+      <span class="eyebrow">Canales</span>
+      <h2>Estamos a un mensaje de distancia.</h2>
+      <!-- EDITAR: reemplazar con datos reales del emprendimiento -->
+      <div class="contact-item"><span>✉</span><div><small>Correo</small><strong>nomnom@ejemplo.com</strong></div></div>
+      <div class="contact-item"><span>◉</span><div><small>Instagram</small><strong>@nomnomcakepop</strong></div></div>
+      <div class="contact-item"><span>⌂</span><div><small>Atención</small><strong>Lunes a viernes · 10:00 a.m. – 5:00 p.m.</strong></div></div>
+    </div>
+
+
+    <!-- EDITAR: formulario. Para recibir mensajes reales necesitarán un servicio/backend -->
+    <form class="contact-form reveal" id="contactForm">
+      <label>Nombre<input type="text" name="nombre" placeholder="Tu nombre" required></label>
+      <label>Correo<input type="email" name="correo" placeholder="correo@ejemplo.com" required></label>
+      <label>Motivo
+        <select name="motivo">
+          <option>Información sobre productos</option>
+          <option>Pedido</option>
+          <option>Comentarios</option>
+          <option>Otro</option>
+        </select>
+      </label>
+      <label>Mensaje<textarea name="mensaje" rows="5" placeholder="Cuéntanos qué necesitas..." required></textarea></label>
+      <button class="button button-primary" type="submit">Enviar mensaje →</button>
+      <p class="form-note" id="contactMessage" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><strong>Nom Nom</strong><p>El antojo perfecto.</p></div>
+      <div class="footer-links">
+        <a href="nosotros.html">Nosotros</a>
+        <a href="productos.html">Productos</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <small>© <span class="current-year"></span> Nom Nom · Proyecto de emprendimiento</small>
+    </div>
+  </footer>
+</body>
+</html>

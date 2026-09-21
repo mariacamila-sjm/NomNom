@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- EDITAR: descripción específica de esta página -->
+  <meta name="description" content="Nom Nom | Opiniones">
+  <title>Nom Nom | Opiniones</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+
+  <!-- EDITAR: mensaje promocional global -->
+  <div class="announcement">
+    <p>Amor y Amistad · Pregunta por nuestras promociones</p>
+    <a href="productos.html">Ver productos →</a>
+  </div>
+
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navegación principal">
+      <!-- EDITAR: logo y nombre del emprendimiento -->
+      <a class="brand" href="index.html" aria-label="Ir al inicio">
+        <img src="https://lh3.googleusercontent.com/d/1QMMsMa7xFpCioEOwvbarevhTAPmQsnxx" alt="Logo de Nom Nom" class="brand-mark-img">
+        <span class="brand-copy">
+          <strong>Nom Nom</strong>
+          <small>El antojo perfecto</small>
+        </span>
+      </a>
+
+
+      <button class="icon-button menu-toggle" id="menuToggle" type="button"
+              aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+
+      <ul class="nav-menu" id="navMenu"><li><a class="nav-link " href="index.html">Inicio</a></li>
+<li><a class="nav-link " href="nosotros.html">Nosotros</a></li>
+<li><a class="nav-link " href="productos.html">Productos</a></li>
+<li><a class="nav-link active" href="opiniones.html">Opiniones</a></li>
+<li><a class="nav-link " href="chatbot.html">Chatbot</a></li>
+<li><a class="nav-link " href="contacto.html">Contacto</a></li></ul>
+
+
+      <div class="nav-actions">
+        <button class="icon-button" id="themeToggle" type="button" aria-label="Cambiar tema">
+          <span id="themeIcon">☾</span>
+        </button>
+        <button class="cart-button" id="openCart" type="button" aria-label="Abrir carrito">
+          <span>🛒</span><span class="cart-label">Carrito</span><span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+
+  <main id="contenido">
+
+
+<section class="page-hero compact">
+  <div class="container page-hero-content reveal">
+    <span class="eyebrow">03 · Experiencias</span>
+    <h1>Lo que dicen quienes <span>nos conocen.</span></h1>
+    <p>Una sección para mostrar opiniones reales de clientes, compañeros o usuarios.</p>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container section-heading reveal">
+    <span class="eyebrow">Opiniones</span>
+    <h2>Experiencias que hablan por sí solas.</h2>
+  </div>
+
+
+  <div class="container review-grid">
+    <!-- EDITAR: reemplazar por opiniones reales. No inventar testimonios para la versión final -->
+    <article class="review-card reveal">
+      <div class="stars">★★★★★</div>
+      <p>““Los cake pops estaban deliciosos, súper bonitos y tenían el tamaño perfecto. ¡Definitivamente volvería a comprar!” 🩷🍭”</p>
+      <strong>Cliente / usuario</strong>
+      <small>Experiencia de compra</small>
+    </article>
+    <article class="review-card reveal">
+      <div class="stars">★★★★☆</div>
+      <p>“Los compré para regalar y le encantaron. 🩷🍭”</p>
+      <strong>Cliente / usuario</strong>
+      <small>Experiencia de compra</small>
+    </article>
+    <article class="review-card reveal">
+      <div class="stars">★★★★☆</div>
+      <p>“La compra fue súper fácil y los cake pops estaban deliciosos. ¡Quedé muy feliz con mi pedido!🩷🍭.”</p>
+      <strong>Cliente / usuario</strong>
+      <small>Experiencia de compra</small>
+    </article>
+  </div>
+</section>
+
+
+<section class="section section-soft">
+  <div class="container rating-panel reveal">
+    <div><span class="eyebrow">Indicador</span><strong>4.4</strong><p>Promedio de valoración</p></div>
+    <div class="rating-bars">
+      <div><span>5 estrellas</span><div><i style="width:92%"></i></div></div>
+      <div><span>4 estrellas</span><div><i style="width:65%"></i></div></div>
+      <div><span>4 estrellas</span><div><i style="width:20%"></i></div></div>
+    </div>
+  </div>
+</section>
+
+
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><strong>Nom Nom</strong><p>El antojo perfecto.</p></div>
+      <div class="footer-links">
+        <a href="nosotros.html">Nosotros</a>
+        <a href="productos.html">Productos</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <small>© <span class="current-year"></span> Nom Nom · Proyecto de emprendimiento</small>
+    </div>
+  </footer>
+</body>
+</html>
